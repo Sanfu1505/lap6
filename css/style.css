@@ -1,0 +1,169 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bgr.png);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+/* Styles for header */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title_img_logo{
+    width: 60px;
+}
+header p{
+    text-align: center;
+    color: rgb(10, 8, 0);
+    font-size: 25px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+
+nav ul.menu li {
+    margin-right: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles for main */
+main {
+    padding: 10px;
+}
+
+.title_event{
+    font-size: 27px;
+    text-align: center;
+}
+
+.title_content{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.title_event_list{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.title_day{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title_img-event{
+    width:100%;
+}
+
+dt{
+    font-size: 20px;
+}
+
+.title_menu{
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.title_info{
+    font-size: 30px;
+}
+
+.title_img_info{
+    width: 100%;
+}
+
+.title_job{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.title_services{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    font-size: 25px;
+    gap: 30px;
+}
+
+ul.title_services li{
+    flex: 1;
+}
+
+.title_img_services{
+    width: 100%;
+}
+
+input{
+    width: 40%;
+    height: 50px;
+}
+
+textarea{
+    width: 40%;
+    height: 50px;
+}
+
+form{
+    text-align: right;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Reponsive style*/
+
+@media only screen and (max-width: 600px) {
+    .title_services{
+        display: block;
+    }
+    .title_event_list{
+        display: block;
+    }
+    
+    header{
+    flex-wrap: wrap;
+    }
+
+    .menu{
+    flex-wrap: wrap;
+    }
+    body{
+        background-size: auto;
+    }
+}
